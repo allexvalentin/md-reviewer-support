@@ -1,0 +1,28 @@
+name: Bug report
+description: Report a reproducible problem using a disposable example
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: "Issues are public. Do not upload confidential documents or personal data. Use private vulnerability reporting for security concerns."
+  - type: input
+    id: app-version
+    attributes:
+      label: MD-Reviewer version and build
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac model
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected result, and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Optional disposable Markdown example
+      render: markdown
